@@ -1,3 +1,4 @@
+import Header from "@/components/layout/Header";
 import swrconfig from "@/config/swr";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
@@ -28,6 +29,7 @@ export default function RootLayout({
           fontSans.variable,
         )}
       >
+        <Header />
         {children}
       </body>
     </html>
