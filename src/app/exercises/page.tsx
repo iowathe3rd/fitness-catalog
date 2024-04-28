@@ -1,5 +1,11 @@
+import Exercises from "@/components/shared/Exercises";
+
 const ExercisesPage = () => {
-  return <></>;
+  return (
+    <>
+      <Exercises />
+    </>
+  );
 };
 
 export default ExercisesPage;

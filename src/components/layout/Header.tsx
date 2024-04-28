@@ -16,7 +16,7 @@ const Header = () => {
     <header>
       <nav className="bg-background border-border border px-4 lg:px-6 py-2.5">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-          <Link href="https://flowbite.com" className="flex items-center">
+          <Link href="/" className="flex items-center">
             <span className="self-center text-xl font-semibold whitespace-nowrap">
               Fitness-catalog
             </span>
