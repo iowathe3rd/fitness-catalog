@@ -30,7 +30,7 @@ export default function RootLayout({
         )}
       >
         <Header />
-        {children}
+        <main className="container p-4">{children}</main>
       </body>
     </html>
   );

@@ -16,19 +16,29 @@ type ExerciseCardProps = {
 
 const ExerciseCard: React.FC<ExerciseCardProps> = ({ exercise }) => {
   return (
-    <Card className="flex flex-col md:flex-col">
+    <Card className="flex flex-col md:flex-col max-w-md">
       <Image
         src={exercise.gifUrl}
         alt={exercise.name}
         width={400}
         height={400}
+        className="h-80"
       />
       <div>
         <CardHeader>
-          <CardTitle>${exercise.name}</CardTitle>
+          <CardTitle>{exercise.name}</CardTitle>
         </CardHeader>
         <CardContent>
-          <p>Card Content</p>
+          <ul className="list-disc pl-4">
+            <li>
+              Body part -{" "}
+              <span className="font-bold italic">{exercise.bodyPart}</span>
+            </li>
+            <li>
+              Equpimenr -{" "}
+              <span className="font-bold italic">{exercise.equipment}</span>
+            </li>
+          </ul>
         </CardContent>
         <CardFooter>
           <Button asChild>
